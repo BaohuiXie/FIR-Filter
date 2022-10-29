@@ -1,0 +1,4 @@
+#!/bin/sh
+
+vcs -full64 ../rtl/FIR_filter.v ../tb/FIR_filter_tb.v +v2k -debug_all -top FIR_filter_tb \
+  -timescale=1ns/1ps

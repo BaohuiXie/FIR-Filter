@@ -1,0 +1,81 @@
+################################################################################
+# Filename: FIR_filter.ioc
+# Author: XIE BAOHUI
+# Email: bxieaf@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# ------------------------------------------------------------------------------
+#
+
+#
+# Note: if we do not provide the IO location constraint for our FIR_filter module,
+# the Encounter will randomly place our pins.
+################################################################################
+
+(globals
+    version = 3
+    io_order = default
+    space = 1.5
+)
+(iopin
+    (top
+	(pin name="outData[0]"	 layer=6 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="outData[1]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[2]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[3]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[4]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[5]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[6]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[7]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[8]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[9]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[10]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[11]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[12]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[13]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[14]"	 layer=6 width=0.1400 depth=0.1400 )
+    )
+    (right
+	(pin name="outData[15]"	 layer=6 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="outData[16]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[17]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[18]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[19]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[20]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[21]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[22]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[23]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[24]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[25]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[26]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[27]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[28]"	 layer=6 width=0.1400 depth=0.1400 )
+    )
+    (bottom
+	(pin name="outData[29]"	 layer=6 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="outData[30]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="outData[31]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="inData[0]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[1]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[2]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[3]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[4]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[5]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[6]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[7]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[8]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[9]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[10]"	 layer=5 width=0.1400 depth=0.1400 )
+    )
+    (left
+	(pin name="inData[11]"	 layer=5 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="inData[12]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[13]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[14]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="inData[15]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="tap_control[2]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="tap_control[1]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="tap_control[0]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="reset"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="clk"	 layer=5 width=0.1400 depth=0.1400 )
+    )
+)

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+################################################################################
+# Specify the filepath of the verilog library file of standard cell
+################################################################################
+#VERILOG_LIB=/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v
+
+#SDF_LOCATION="../layout/results/FIR_filter.sdf"
+
+vcs -full64 ../layout/results/FIR_filter.routed.v ../tb/FIR_filter_tb.v +v2k -debug_all -top FIR_filter_tb \
+  -timescale=1ns/1ps +neg_tchk +warn=noTFIPC,noSDFCOM_UHICD -v /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v +define+SDF_FILE=\"../layout/results/FIR_filter.sdf\"
